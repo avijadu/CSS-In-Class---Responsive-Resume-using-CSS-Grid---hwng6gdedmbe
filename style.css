@@ -5,5 +5,24 @@
     list-style: none;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
-
+body{
+    display: block;
+    background-color: #a6abad;
+}
 /* Write CSS code below */
+.main-content{
+    min-height: 1000px;
+    width: 90%;
+    margin: 20px auto;
+    display: grid;
+    grid-template-rows: 20% 80%;
+    grid-template-columns: 300px 700px;
+}
+.left-section{
+    grid-column: span 1;
+    background-color: aquamarine;
+}
+.right-section{
+    grid-column: span 1 / span 2;
+    background-color: blanchedalmond;
+}
